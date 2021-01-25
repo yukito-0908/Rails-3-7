@@ -58,9 +58,8 @@
         <!-- body部分 下で変更します -->
       <%= @blog.body %>
       </p>
-      <!-- <a href="#">編集</a> を排除し、以下のコードに変更 -->
       <%= link_to "編集", edit_blog_path(@blog) %>
-      <a href="#">削除</a>
+      <%= link_to "排除", blogs_path(@blog) %>
       <div class="author-case">
         <div class="author-image"></div>
         <div class="author-box">
